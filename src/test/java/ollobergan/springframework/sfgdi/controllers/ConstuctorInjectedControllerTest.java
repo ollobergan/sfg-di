@@ -1,10 +1,8 @@
 package ollobergan.springframework.sfgdi.controllers;
 
-import ollobergan.springframework.sfgdi.services.GreetingServiceImpl;
+import ollobergan.springframework.sfgdi.services.ContructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ConstuctorInjectedControllerTest {
 
@@ -12,7 +10,7 @@ class ConstuctorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstuctorInjectedController(new GreetingServiceImpl());
+        controller = new ConstuctorInjectedController(new ContructorGreetingService());
     }
 
     @Test
